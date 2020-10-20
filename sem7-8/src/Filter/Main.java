@@ -20,7 +20,7 @@ public class Main {
         return Arrays.copyOf(array, array.length - offset);
     }
 
-    public static <T> T[] filter2(T[] array, Function<? super T, Boolean>, filter) {
+    public static <T> T[] filter2(T[] array, Function<? super T, Boolean> filter) {
         int offset = 0;
 
         for(int i = 0; i< array.length; i++){
@@ -47,7 +47,7 @@ public class Main {
             System.out.println(newArray[i]);
         }
         System.out.println();
-        String newArray2[] = filter2(array, s -> s != null && s.lenght() > 5);
+        String newArray2[] = filter2(array, s -> s != null && s.lenght() > 5);  //у меня тут всё равно красное пока
         for (int i = 0; i < newArray2.length; i++){
             System.out.println(newArray[i]);
         }
