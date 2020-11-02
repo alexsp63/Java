@@ -20,6 +20,8 @@ public class Terminal {
             prohod += 1;
             money += wallet.getPayment();
             wallet.setBalance(-wallet.getPayment());
+        } else {
+            System.out.println("/Отклонено в поездке!/")
         }
     }
 
@@ -29,6 +31,8 @@ public class Terminal {
             money += oneTime.getPayment();
             oneTime.setFlag();
             count += 1;
+        } else {
+            System.out.println("/Отклонено в поездке!/")
         }
     }
 
